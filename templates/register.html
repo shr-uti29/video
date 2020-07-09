@@ -1,0 +1,54 @@
+{% load static %}
+<html>
+    <head>
+
+        <title> Register</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+
+         <div class="container">
+             <div class="hero">
+
+             </div>
+
+         </div>
+         <div class="login-box" style="height:625px">
+
+             <h1>Register</h1>
+             <!--<form class="form" method="POST" action="">-->
+                <form method="POST" action="">
+             
+                {% csrf_token %}
+             
+                <p>Username</p>
+                <input type="text" name="username" placeholder="Enter Username">
+                <p>FirstName</p>
+                <input type="text" name="first_name" placeholder="Enter Firstname">
+                <p>Lastname</p>
+                <input type="text" name="last_name" placeholder="Enter Lastname">
+                <p>Email</p>
+                <input type="text" name="email" placeholder="Enter Email">
+                <p>Password</p>
+                <input type="text" name="password1" placeholder="Enter Password">
+                <p>Password</p>
+                <input type="text" name="password2" placeholder="Confirm Password">
+                <p>Contact</p>
+                <input type="text" name="Contact" placeholder="Enter Contact">
+                <br><br>
+                <button>Signup</button>
+                <br>
+                <button><a href="/">Already Registered</a></button>
+              </form>
+         </div>
+
+      
+    
+
+
+
+
+
+
+    </body>
+</html>
